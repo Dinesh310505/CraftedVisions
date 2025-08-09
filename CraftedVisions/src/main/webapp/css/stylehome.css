@@ -1,0 +1,270 @@
+body {
+    font-family: 'Montserrat', Arial, sans-serif;
+    margin: 0;
+    background: #fff;
+    color: #111;
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 32px 48px 16px 48px;
+    border-bottom: 2px solid #eee;
+}
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+.logo img {
+    width: 40px;
+    margin-right: 12px;
+}
+.header-buttons {
+    display: flex;
+    gap: 16px;
+}
+.header-buttons button {
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 24px;
+    font-size: 1rem;
+    border-radius: 4px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+.header-buttons button:hover {
+    background: #444;
+}
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 48px 10vw 0 10vw;
+    gap: 48px;
+}
+.hero-text {
+    flex: 1;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 24px;
+    line-height: 1.1;
+}
+.hero-text p {
+    font-size: 1.1rem;
+    color: #444;
+}
+.hero-image {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+.hero-image img {
+    width: 340px;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.centered-text {
+    text-align: center;
+    margin: 48px 0 32px 0;
+    font-size: 1.1rem;
+    color: #222;
+}
+.steps-section {
+    background: #ededed;
+    margin: 0 auto 48px auto;
+    padding: 48px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    border-radius: 8px;
+    box-shadow: 8px 8px 0 #e0e0e0;
+}
+.steps-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 48px;
+}
+.steps-image img {
+    width: 260px;
+    border-radius: 8px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.steps-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.steps-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.steps-desc {
+    color: #444;
+    margin-bottom: 16px;
+}
+.steps-list {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+.step {
+    font-size: 1.1rem;
+}
+.step-title {
+    font-weight: 700;
+    margin-bottom: 2px;
+}
+.skills-section {
+    text-align: center;
+    margin: 64px 0 0 0;
+}
+.skills-section h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.skills-section p {
+    color: #444;
+    margin-bottom: 32px;
+}
+.opportunities-section {
+    background: #ededed;
+    padding: 48px 0 48px 0;
+    margin: 32px 0 0 0;
+}
+.opportunities-section h3 {
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.opportunities-section p {
+    text-align: center;
+    color: #444;
+    margin-bottom: 32px;
+}
+.opportunities-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    width: 80vw;
+    margin: 0 auto;
+}
+.opportunity-card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+    padding: 24px 16px 32px 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    min-height: 170px;
+}
+.opportunity-card h4 {
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+    text-transform: capitalize;
+}
+.opportunity-card p {
+    font-size: 0.98rem;
+    color: #444;
+    margin-bottom: 18px;
+}
+.opportunity-card button {
+    margin-top: auto;
+    border: 1.5px solid #111;
+    background: #fff;
+    color: #111;
+    font-weight: 700;
+    padding: 7px 18px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+.opportunity-card button:hover {
+    background: #111;
+    color: #fff;
+}
+.join-section {
+    background: #ededed;
+    margin: 64px auto 0 auto;
+    padding: 48px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 80vw;
+    border-radius: 8px;
+}
+.join-content {
+    display: flex;
+    align-items: center;
+    width: 90%;
+    gap: 48px;
+}
+.join-text {
+    flex: 1;
+}
+.join-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.join-desc {
+    color: #444;
+}
+.join-image img {
+    width: 180px;
+    border-radius: 50%;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+}
+.footer {
+    text-align: center;
+    margin: 48px 0 24px 0;
+}
+.footer-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.footer-desc {
+    color: #444;
+    font-size: 1rem;
+}
+@media (max-width: 1100px) {
+    .hero, .steps-content, .join-content, .opportunities-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+    .opportunities-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media (max-width: 700px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 24px 16px 8px 16px;
+    }
+    .hero, .steps-section, .join-section {
+        padding: 24px 0 0 0;
+        width: 98vw;
+    }
+    .steps-section, .join-section {
+        width: 98vw;
+    }
+    .opportunities-grid {
+        grid-template-columns: 1fr;
+        width: 98vw;
+    }
+}

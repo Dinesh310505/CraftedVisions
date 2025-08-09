@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link rel="stylesheet" href="css/Register.css">
+</head>
+<body>
+
+  <form class="form-container" action="RegisterServlet" method="post">
+    <h2>Registration</h2>
+    <input type="text" name="name" placeholder="Name" required />
+    <input type="tel" maxlength="10" name="phonenumber" placeholder="Phone Number" required />
+    <input type="email" name="email" placeholder="Email address" required />
+    <input type="password" name="password" placeholder="Password" required />
+    <input type="password" name="confirmPassword" placeholder="Re-enter Password" required />
+    <button class="btn" type="submit">Register →</button>
+
+    <div class="login-link">
+      Already have an account? <a href="Login.html">Login</a>
+    </div>
+  </form>
+  <script>
+  document.querySelector("form").addEventListener("submit", function(e) {
+    const password = document.querySelector('input[name="password"]').value;
+    const confirmPassword = document.querySelector('input[name="confirmPassword"]').value;
+
+    if (password !== confirmPassword) {
+      alert("Passwords do not match!");
+      e.preventDefault();
+    }
+  });
+</script>
+</body>
+</html>
